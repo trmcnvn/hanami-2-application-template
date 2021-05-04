@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require "app_prototype/repository"
+require "testing_hanami/repository"
 require_relative "entities"
 
 module Main
-  class Repository < AppPrototype::Repository
+  class Repository < TestingHanami::Repository
     struct_namespace Entities
   end
 end
